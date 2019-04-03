@@ -1,0 +1,22 @@
+{
+  "name": "cli_word_guess_game",
+  "version": "1.0.0",
+  "description": "A node.js based word guess game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bshurts93/CLI_Word_Guess_Game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bshurts93/CLI_Word_Guess_Game/issues"
+  },
+  "homepage": "https://github.com/bshurts93/CLI_Word_Guess_Game#readme",
+  "dependencies": {
+    "inquirer": "^6.2.2"
+  }
+}
