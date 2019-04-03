@@ -13,7 +13,6 @@ module.exports = function Letter(char) {
     this.check = function (guess) {
         if (guess === this.char) {
             this.bool = true;
-            console.log("TRUE!");
         }
     }
 }

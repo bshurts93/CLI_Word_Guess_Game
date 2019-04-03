@@ -1,7 +1,7 @@
 var Letter = require("./letter");
 
 
-function Word(str) {
+module.exports = function Word(str) {
     this.lettersArr = [];
     this.arrGet = function () {
         // Create an arr of Letter objects for each letter of the array provided
@@ -11,7 +11,6 @@ function Word(str) {
         });
     }
     this.string = function () {
-        console.log("STRING FUNCTION");
         var str = [];
 
         // Calls function in Letter obj "reveal" that displays either char or underscore
@@ -19,7 +18,7 @@ function Word(str) {
             str.push(this.lettersArr[i].reveal());
         }
         // Returns a string representing the word
-        return str.join("");
+        return str.join(" ");
     };
     this.guess = function (char) {
         // Calls guess function from Letter object
@@ -30,10 +29,19 @@ function Word(str) {
 }
 
 
-var test = new Word("test");
 
-test.arrGet();
-console.log(test.lettersArr);
-test.guess("t");
-console.log(test.lettersArr);
+// var test = new Word("test");
+
+// test.arrGet();
+// console.log(test.lettersArr);
+// console.log(test.string());
+// test.guess("t");
+// console.log("\r\n\r\n---------------------------------\r\n\r\n");
+// console.log(test.lettersArr);
+// console.log(test.string());
+// test.guess("e");
+// console.log("\r\n\r\n---------------------------------\r\n\r\n");
+// console.log(test.lettersArr);
+// console.log(test.string());
+
 
