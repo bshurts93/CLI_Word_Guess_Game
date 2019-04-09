@@ -2,15 +2,28 @@ var Word = require("./word");
 var inquirer = require("inquirer");
 
 
-var wordsArr = ["One", "Two", "Three"];
+var wordsArr = ["one", "two", "three", "four", "five"];
 var currentWord;
 
 function newWord() {
-    currentWord = new Word("test");
+    currentWord = new Word(wordsArr[(Math.floor(Math.random() * wordsArr.length))]);
     currentWord.arrGet();
+    console.log(currentWord.string());
 }
 
+
 function guessLetter() {
+    if (currentWord.string().indexOf("_") === -1) {
+        console.log("---------------");
+        console.log("YOU WIN!!!");
+        console.log("---------------");
+
+        console.log("\r\n\r\n");
+        console.log("New word:");
+        console.log("---------------");
+        newWord();
+    }
+
     inquirer.prompt([
         {
             type: "input",
@@ -32,16 +45,3 @@ newWord();
 guessLetter();
 
 
-// var test = new Word("test");
-
-// test.arrGet();
-// console.log(test.lettersArr);
-// console.log(test.string());
-// test.guess("t");
-// console.log("\r\n\r\n---------------------------------\r\n\r\n");
-// console.log(test.lettersArr);
-// console.log(test.string());
-// test.guess("e");
-// console.log("\r\n\r\n---------------------------------\r\n\r\n");
-// console.log(test.lettersArr);
-// console.log(test.string());

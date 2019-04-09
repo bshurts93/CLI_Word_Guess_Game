@@ -29,7 +29,7 @@ module.exports = function Word(str) {
 }
 
 
-
+// TESTING 
 // var test = new Word("test");
 
 // test.arrGet();
