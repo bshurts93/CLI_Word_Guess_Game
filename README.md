@@ -10,7 +10,7 @@ It's easy as `npm i`. As long as you have node installed, the only dependency is
 ## Here's a look
 
 #### Search for artist concerts
-![demo gif](https://github.com/bshurts93/liri-node-app/blob/master/images/bandsintown.gif)
+![demo gif](https://github.com/bshurts93/CLI_Word_Guess_Game/blob/master/CLI_word_game.gif)
 
 ## Author
 
