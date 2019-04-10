@@ -1,3 +1,4 @@
+
 # Command Line Word Guess Game
 
 Hope you're hungry, they're all food based words.
@@ -15,4 +16,3 @@ It's easy as `npm i`. As long as you have node installed, the only dependency is
 
 * **Ben Shurts** 
 
-## Acknowledgments
