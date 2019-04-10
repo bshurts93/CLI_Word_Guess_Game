@@ -1,8 +1,7 @@
 var Word = require("./word");
 var inquirer = require("inquirer");
 
-
-var wordsArr = ["one", "two", "three", "four", "five"];
+var wordsArr = ["pizza", "chimichanga", "cabbage", "sourdough", "spaghetti", "schnitzel"];
 var currentWord;
 
 function newWord() {
@@ -28,7 +27,8 @@ function guessLetter() {
         {
             type: "input",
             message: "Guess a letter",
-            name: "guess"
+            name: "guess",
+            default: ""
         }
     ]).then(function (answer) {
 
